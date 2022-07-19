@@ -12,6 +12,7 @@ public class RadioTest {
         int actual = radio.getStation();
         assertEquals(expected, actual);
     }
+
     @Test
     public void stationTest1() {
         Radio radio = new Radio();
@@ -31,6 +32,7 @@ public class RadioTest {
         int actual = radio.getStation();
         assertEquals(expected, actual);
     }
+
     @Test
     public void stationTest3() {
         Radio radio = new Radio();
@@ -40,6 +42,7 @@ public class RadioTest {
         int actual = radio.getStation();
         assertEquals(expected, actual);
     }
+
     @Test
     public void stationTest4() {
         Radio radio = new Radio();
@@ -49,6 +52,7 @@ public class RadioTest {
         int actual = radio.getStation();
         assertEquals(expected, actual);
     }
+
     @Test
     public void stationTest5() {
         Radio radio = new Radio();
@@ -58,6 +62,17 @@ public class RadioTest {
         int actual = radio.getStation();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void maxStation() {
+        Radio radio = new Radio(15);
+        radio.setStation(11);
+        radio.next();
+        int expected = 12;
+        int actual = radio.getStation();
+        assertEquals(expected, actual);
+    }
+
     @Test
     public void soundTest() {
         Radio radio = new Radio();
@@ -67,6 +82,7 @@ public class RadioTest {
         int actual = radio.getSound();
         assertEquals(expected, actual);
     }
+
     @Test
     public void soundTest1() {
         Radio radio = new Radio();
@@ -76,6 +92,7 @@ public class RadioTest {
         int actual = radio.getSound();
         assertEquals(expected, actual);
     }
+
     @Test
     public void soundTest2() {
         Radio radio = new Radio();
@@ -85,6 +102,7 @@ public class RadioTest {
         int actual = radio.getSound();
         assertEquals(expected, actual);
     }
+
     @Test
     public void soundTest3() {
         Radio radio = new Radio();
@@ -94,6 +112,7 @@ public class RadioTest {
         int actual = radio.getSound();
         assertEquals(expected, actual);
     }
+
     @Test
     public void soundTest4() {
         Radio radio = new Radio();
@@ -103,6 +122,7 @@ public class RadioTest {
         int actual = radio.getSound();
         assertEquals(expected, actual);
     }
+
     @Test
     public void soundTest5() {
         Radio radio = new Radio();
@@ -112,4 +132,5 @@ public class RadioTest {
         int actual = radio.getSound();
         assertEquals(expected, actual);
     }
+
 }
